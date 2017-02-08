@@ -11844,8 +11844,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Intensive-care-data-analysis.">Intensive care data analysis.<a class="anchor-link" href="#Intensive-care-data-analysis.">&#182;</a></h2><h3 id="GICU:">GICU:<a class="anchor-link" href="#GICU:">&#182;</a></h3><p>Data from the general intensive care unit in the BRI.</p>
-<h3 id="MIMIC:">MIMIC:<a class="anchor-link" href="#MIMIC:">&#182;</a></h3><p><em>Medical Information Mart for Intensive Care</em> - large freely available database provided by MIT. 46,000+ patients who passed through intensive care in Beth Israel Deaconess Medical Center between 2001 and 2012 (<a href="https://mimic.physionet.org/">https://mimic.physionet.org/</a>).</p>
+<h2 id="What-can-we-do-with-this-data?">What can we do with this data?<a class="anchor-link" href="#What-can-we-do-with-this-data?">&#182;</a></h2><ul>
+<li>Track single patient interventions and physiological state</li>
+<li>Data aggregations for statistical analysis</li>
+<li>Link with other hospital data systems (e.g. Ward Watcher) </li>
+</ul>
 
 </div>
 </div>
@@ -11855,11 +11858,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-can-we-do-with-this-data?">What can we do with this data?<a class="anchor-link" href="#What-can-we-do-with-this-data?">&#182;</a></h2><ul>
-<li>Track single patient interventions and physiological state</li>
-<li>Data aggregations for statistical analysis</li>
-<li>Link with other hospital data systems (e.g. Ward Watcher) </li>
-</ul>
+<h2 id="Which-data?">Which data?<a class="anchor-link" href="#Which-data?">&#182;</a></h2><h3 id="GICU:">GICU:<a class="anchor-link" href="#GICU:">&#182;</a></h3><p>Data from the general intensive care unit in the BRI.</p>
+<h3 id="MIMIC:">MIMIC:<a class="anchor-link" href="#MIMIC:">&#182;</a></h3><p><em>Medical Information Mart for Intensive Care</em> - large freely available database provided by MIT. 46,000+ patients who passed through intensive care in Beth Israel Deaconess Medical Center between 2001 and 2012 (<a href="https://mimic.physionet.org/">https://mimic.physionet.org/</a>).</p>
 
 </div>
 </div>
@@ -19728,6 +19728,19 @@ YII=
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Statistics-around-patient-discharge">Statistics around patient discharge<a class="anchor-link" href="#Statistics-around-patient-discharge">&#182;</a></h2><h3 id="Motivation:">Motivation:<a class="anchor-link" href="#Motivation:">&#182;</a></h3><ul>
+<li>Predicting bed availability </li>
+<li>Improve flow management </li>
+</ul>
+
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -21135,16 +21148,7 @@ width=1000
 </div>
 </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Statistics-around-patient-discharge">Statistics around patient discharge<a class="anchor-link" href="#Statistics-around-patient-discharge">&#182;</a></h2>
-</div>
-</div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -21161,7 +21165,7 @@ width=1000
 
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
@@ -22657,7 +22661,7 @@ pAsAAAAAAEgXAAAAAIB0AQAAAAD/kv8A2K3gzUkAqKsAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Do-patients-in-GICU-meet-these-criteria?">Do patients in GICU meet these criteria?<a class="anchor-link" href="#Do-patients-in-GICU-meet-these-criteria?">&#182;</a></h3><p>Specifically: the 1549 single stay GICU survivors</p>
+<h3 id="Do-patients-in-GICU-meet-these-nurse-led-discharge-(NLD)-criteria?">Do patients in GICU meet these nurse-led discharge (NLD) criteria?<a class="anchor-link" href="#Do-patients-in-GICU-meet-these-nurse-led-discharge-(NLD)-criteria?">&#182;</a></h3><p>Specifically: the 1549 single stay GICU survivors</p>
 
 </div>
 </div>
@@ -22667,7 +22671,12 @@ pAsAAAAAAEgXAAAAAIB0AQAAAAD/kv8A2K3gzUkAqKsAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Panel-plots-of-variables-associated-with-NLD..">Panel plots of variables associated with NLD..<a class="anchor-link" href="#Panel-plots-of-variables-associated-with-NLD..">&#182;</a></h2>
+<h3 id="For-a-single-patient:">For a single patient:<a class="anchor-link" href="#For-a-single-patient:">&#182;</a></h3><p>Do they meet nurse-led discharge (NLD) criteria?</p>
+<ul>
+<li>Green: parameter meeting criteria</li>
+<li>Red:   parameter not meeting criteria</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -23147,7 +23156,9 @@ width=600
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Final-value-distributions:">Final value distributions:<a class="anchor-link" href="#Final-value-distributions:">&#182;</a></h2>
+<h2 id="Final-value-distributions:">Final value distributions:<a class="anchor-link" href="#Final-value-distributions:">&#182;</a></h2><p>For all surviving patients leaving GICU.</p>
+<p><strong>Green region: meeting NLD criteria.</strong></p>
+
 </div>
 </div>
 </div></section><section>
@@ -27581,7 +27592,7 @@ IBAIBAKBQCCMQ4FAIBAIBAKBQCAQVOD/AbC7uY0b6MtiAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Machine-learning:">Machine learning:<a class="anchor-link" href="#Machine-learning:">&#182;</a></h2><h3 id="Who-is-ready-for-discharge?">Who is ready for discharge?<a class="anchor-link" href="#Who-is-ready-for-discharge?">&#182;</a></h3>
+<h2 id="Machine-learning:">Machine learning:<a class="anchor-link" href="#Machine-learning:">&#182;</a></h2><h3 id="Who-is-ready-for-discharge?">Who is ready for discharge?<a class="anchor-link" href="#Who-is-ready-for-discharge?">&#182;</a></h3><h3 id="Classifier-as-a-tool-for-clinicians.">Classifier as a tool for clinicians.<a class="anchor-link" href="#Classifier-as-a-tool-for-clinicians.">&#182;</a></h3>
 </div>
 </div>
 </div></section><section>
@@ -32411,6 +32422,15 @@ mML/AtmYQg1/2nLAAAAAAElFTkSuQmCC
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="And-all-collaborators.">And all collaborators.<a class="anchor-link" href="#And-all-collaborators.">&#182;</a></h4>
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
